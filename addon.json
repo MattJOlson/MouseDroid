@@ -1,0 +1,31 @@
+{
+  "key": "mousedroid-0.1.0",
+  "name": "MouseDroid",
+  "description": "The Death Star is a big place, and it's easy to get lost",
+  "vendor": {
+    "name": "tbc",
+    "url": "https://www.hipchat.com"
+  },
+  "links": {
+    "self": "{{localBaseUrl}}/addon.json",
+    "homepage": "{{localBaseUrl}}"
+  },
+  "capabilities": {
+    "hipchatApiConsumer": {
+      "scopes": [
+        "send_notification",
+        "view_room"
+      ]
+    },
+    "installable": {
+      "callbackUrl": "{{localBaseUrl}}/installable"
+    },
+    "webhook": {
+      "url": "{{localBaseUrl}}/webhook",
+      "pattern": "^Hey,? MouseDroid",
+      "event": "room_message",
+      "name": "Hello!",
+      "authentication": "jwt"
+    },
+  }
+}

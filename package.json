@@ -1,0 +1,32 @@
+{
+  "name": "mousedroid",
+  "version": "1.0.0",
+  "description": "Webhooks target for chat integration",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MattJOlson/MouseDroid.git"
+  },
+  "keywords": [
+    "ChatOps"
+  ],
+  "author": "Matt Olson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MattJOlson/MouseDroid/issues"
+  },
+  "homepage": "https://github.com/MattJOlson/MouseDroid#readme",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4",
+    "jasmine": "^2.4.1",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.22",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-jasmine": "^0.3.7",
+    "memory-cache": "^0.1.4"
+  }
+}
