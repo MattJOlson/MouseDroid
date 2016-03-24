@@ -21,12 +21,10 @@
   "homepage": "https://github.com/MattJOlson/MouseDroid#readme",
   "dependencies": {
     "body-parser": "^1.15.0",
+    "expect": "^1.16.0",
     "express": "^4.13.4",
-    "jasmine": "^2.4.1",
-    "jasmine-core": "^2.4.1",
-    "karma": "^0.13.22",
-    "karma-chrome-launcher": "^0.2.2",
-    "karma-jasmine": "^0.3.7",
-    "memory-cache": "^0.1.4"
+    "grunt": "^0.4.5",
+    "memory-cache": "^0.1.4",
+    "mocha": "^2.4.5"
   }
 }
