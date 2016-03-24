@@ -1,5 +1,5 @@
 $LOAD_PATH.unshift(File.expand_path(File.dirname(".")))
-$LOAD_PATH.unshift(File.expand_path(File.dirname("./src")))
+# $LOAD_PATH.unshift(File.expand_path(File.dirname("./src")))
 require 'rake/testtask'
 require 'rake/clean'
 require 'fileutils'
@@ -8,6 +8,7 @@ task :default => :test
 
 task :test do
     Rake::TestTask.new do |t|
+        t.libs << "src"
         t.test_files = FileList['test/*.rb']
         t.verbose = true
     end
