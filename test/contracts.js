@@ -1,7 +1,8 @@
 var expect = require('expect');
+var contracts = require('../src/contracts');
 
 describe("contracts", function() {
-    it("fails when I want to prove that I can run tests", function() {
-        expect(true).toBe(false);
+    it("has a HipChat member", function() {
+        expect(contracts.HipChat).toExist();
     });
 });
